@@ -72,12 +72,12 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href=""><img class="logo" src="assets/images/logo-board-consulting.png" alt="Logo Álvaro Dias" /></a>
+                            <a class="navbar-brand" href=""><img class="logo" src="assets/images/logo-board-consulting.png" alt="Logo Board Consulting" /></a>
                         </div><!-- .navbar-header -->
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li><a href="">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><a href="#sobre" class="scroll">Sobre</a></li>
                                 <li><a href="#metodologia" class="scroll">Metodologia</a></li>
                                 <li><a href="#valor" class="scroll">Criando Valor</a></li>

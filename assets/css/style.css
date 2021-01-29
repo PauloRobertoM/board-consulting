@@ -25,34 +25,10 @@ body {
     width: 100%;
 }
 
-.owl-dots {
-    text-align: center;
-    margin-top: -30px;
-    position: relative;
-}
-.owl-dot {
-    border-radius: 50px;
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    background: #969a9f;
-    margin: 0 5px;
-    -webkit-box-shadow: 0px 0px 2px 1px rgba(150,154,159,0.5);
-    -moz-box-shadow: 0px 0px 2px 1px rgba(150,154,159,0.5);
-    box-shadow: 0px 0px 2px 1px rgba(150,154,159,0.5);
-    transition: .6s;
-}
-.owl-dot.active,
-.owl-dot:hover {
-    background: #1fa6e4;
-}
-
 header {
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: 9;
-    -webkit-box-shadow: 0px 2px 8px 1px rgba(31,166,228,0.5);
-    -moz-box-shadow: 0px 2px 8px 1px rgba(31,166,228,0.5);
-    box-shadow: 0px 2px 8px 1px rgba(31,166,228,0.5);
 }
 ul.nav,
 .navbar-default,
@@ -61,11 +37,14 @@ ul.nav,
     height: 110px;
 }
 .navbar-default {
-    background: #1fa6e4;
+    background: transparent;
     border-color: transparent;
     border-radius: 0;
     margin-bottom: 0px;
     border: none;
+}
+.navbar-header {
+    width: 25%;
 }
 .navbar-header .navbar-brand {
     display: flex;
@@ -74,12 +53,12 @@ ul.nav,
     padding: 0;
 }
 #bs-example-navbar-collapse-1 {
-    width: 80%;
+    width: 65%;
     float: right;
     padding: 0;
 }
 .navbar-header img {
-    max-width: 60px;
+    max-width: 100%;
     margin-left: 15px;
 }
 ul.nav {
@@ -102,264 +81,27 @@ ul.nav>li>a:hover {
     color: #044f9d!important;
 }
 
-.mural {
-    padding: 55px 0;
-}
-.mural .itens {
+.vitrine .item {
     display: flex;
-    flex-wrap: wrap;
-}
-.mural .item {
-    margin: 15px;
-}
-.mural .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.mural .item1 {
-    width: calc(33.33% - 30px);
-    height: 300px;
-}
-.mural .item2 {
-    background: url(../images/mural-bg1.jpg) no-repeat;
-    background-size: cover;
-    width: calc(63.33% + 15px);
-    height: 300px;
-    margin-top: -315px;
-}
-.mural .item3 {
-    background: url(../images/mural-bg2.jpg) no-repeat;
-    background-size: cover;
-    width: calc(33.33% - 30px);
-    height: 630px;
-}
-.mural .box {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-.mural .item3 {
-    padding: 30px;
-}
-.mural h2 {
-    font-size: 54px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 15px;
-}
-.mural h3 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 0 15px;
-}
-.mural p {
-    font-size: 14px;
-    color: #fff;
-    margin: 0;
-}
-.mural a.btn-leiamais {
-    font-size: 14px;
-    color: #fff;
-    display: table;
-    border: 1px solid #fff;
-    border-radius: 15px;
-    padding: 8px 30px;
-    margin: 15px 0 0;
-}
-.mural a.btn-leiamais:hover {
-    background: #1fa6e4;
-}
-
-.obras .cabeca {
-    background: url(../images/obras-bg-cabeca.jpg) no-repeat;
-    background-size: cover;
-    background-position: right;
-    padding: 30px 0;
-}
-.obras h1 {
-    font-size: 50px;
-    font-weight: 700;
-    text-align: right;
-    text-transform: uppercase;
-    margin: 0;
-}
-.obras h1 span.um {
-    color: #5cafa5;
-}
-.obras h1 span.dois {
-    color: #9ccdf2;
-}
-.obras h1 span.tres {
-    color: #f6f6f6;
-}
-.obras ul {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    border-left: 3px solid #aff2fd;
-    height: 165px;
-}
-.obras li {
-    width: 25%;
-    display: flex;
-    align-items: center;
-}
-.obras li:first-child:before {
-    margin-left: 0!important;
-}
-.obras li:before {
-    content: "";
-    width: calc(60% - 10px);
-    height: 1px;
-    background: #aff2fd;
-    margin: 0 5px;
-}
-.obras li>a {
-    font-size: 22px;
-    color: #2a92c4;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
 }
-.obras li>a.active,
-.obras li>a:hover {
-    color: #044f9d;
-    background: #aff2fd;
-}
-.obras .corpo {
-    background: url(../images/obras-bg-corpo.jpg) no-repeat;
-    background-size: cover;
-    background-position: top right;
-    padding: 60px 0;
-}
-.obras .corpo .item {
-    transform: scale(1);
-    transition: .6s;
-}
-.obras .corpo .item:hover {
-    transform: scale(1.2);
-}
-
-.plano-governo {
-    padding: 70px 0;
-}
-.plano-governo h1 {
-    font-size: 100px;
-    font-family: "Gotham-Ultra";
-    text-transform: uppercase;
-    margin: 0 0 50px;
-}
-.plano-governo h1 span.class1 {
-    color: #044f9d;
-}
-.plano-governo h1 span.class2 {
-    font-family: "Gotham-Light";
-    color: #acd6f5;
-}
-.plano-governo h1 span.class3 {
-    color: #e7b042;
-}
-.plano-governo ul>li {
-    margin-bottom: 25px;
-}
-.plano-governo ul>li>a {
-    font-size: 20px;
-    color: #7e7e7e;
-}
-.plano-governo ul>li>a.active,
-.plano-governo ul>li>a:hover {
-    color: #e7b042;
-}
-.plano-governo .card-body:after {
-    content: "";
-    width: 65px;
-    height: 6px;
-    background: #e7b042;
-    display: block;
-    float: right;
-    margin-top: 10px;
-}
-.plano-governo .card-body img {
-    margin-bottom: 40px;
-}
-.plano-governo .card-body h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #606060;
-    margin: 0 0 15px;
-}
-.plano-governo .card-body p {
-    font-size: 16px;
-    color: #000;
-    margin: 0 0 15px;
-}
-.plano-governo ul.acoes>li {
-    text-align: right;
-}
-.plano-governo ul.acoes>li>a .fa {
-    font-size: 60px;
-}
-#id2,
-#id3 {
-    display: none;
-}
-
-.videos {
-    padding-bottom: 70px;
-}
-.videos h1 {
-    font-size: 54px;
-    font-weight: 700;
-    color: #729fcf;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    margin: 0 0 30px;
-}
-.videos h1:after {
-    content: "";
-    width: 65px;
-    height: 6px;
-    background: #e7b042;
-    display: block;
-    margin-left: 15px;
-}
-
-img.bg-footer {
+.vitrine .box {
+    text-align: center;
     position: absolute;
-    width: 40%;
-    margin-top: -20%;
-    left: 0;
-    z-index: -1;
+    z-index: 9;
+    bottom: 50px;
 }
-
-.rodape {
-    background: #e8b043;
-    padding: 30px 0;
-    margin-top: 70px;
+.vitrine .box h1 {
+    font-size: 44px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 10px;
 }
-.rodape ul {
-    display: flex;
-    justify-content: space-evenly;
+.vitrine .box p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
     margin: 0;
-}
-.rodape ul:after,
-.rodape ul:before {
-    display: none;
-}
-.rodape ul>li>a {
-    font-size: 16px;
-    color: #fff!important;
-    text-transform: uppercase;
-    padding: 10px 0;
-}
-.rodape ul>li>a:hover {
-    color: #044f9d!important;
 }
 
 /* --- MOBILE --- */
