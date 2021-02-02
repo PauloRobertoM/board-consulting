@@ -21,4 +21,5 @@
         e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
+    $('.telefone').mask('(00) 00000-0000');
 })(jQuery, window);

@@ -78,9 +78,13 @@ ul.nav>li>a {
     padding: 10px 0;
 }
 ul.nav>li>a:hover {
-    color: #044f9d!important;
+    color: #276dc4!important;
 }
 
+.vitrine img {
+    height: 400px;
+    object-fit: cover;
+}
 .vitrine .item {
     display: flex;
     justify-content: center;
@@ -95,7 +99,7 @@ ul.nav>li>a:hover {
     font-size: 44px;
     font-weight: bold;
     color: #fff;
-    margin: 0 0 10px;
+    margin: 0 auto 10px;
 }
 .vitrine .box p {
     font-size: 20px;
@@ -104,11 +108,166 @@ ul.nav>li>a:hover {
     margin: 0;
 }
 
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    background: linear-gradient(to right, #276dc4 0%, #13d6b6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #276dc4;
+    display: table;
+    margin: 0 auto 40px;
+}
+p {
+    font-size: 16px;
+    color: #404040;
+    margin: 0 0 20px;
+}
+
+.section-geral {
+    display: flex;
+    align-items: center;
+}
+.section-geral.sobre .item:first-child {
+    padding: 0 30px;
+}
+.section-geral.valor .item:last-child {
+    padding: 0 30px;
+}
+
+.sobre i.fa.fa-check-circle {
+    color: #276dc4;
+    margin-right: 5px;
+}
+
+.metodologia {
+    padding: 80px 0;
+    background: rgb(180,199,231);
+    background: linear-gradient(180deg, #276dc4 30%, #13d6b6 100%);
+}
+.metodologia h1 {
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    text-align: center;
+}
+.metodologia h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 0 10px;
+}
+.metodologia p {
+    color: #fff;
+}
+.metodologia ul>li {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.metodologia i.fa.fa-check-circle {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.valor {
+    padding: 60px 0;
+}
+
+.clientes {
+    background: url('../images/vitrine.jpg') no-repeat;
+    padding: 80px 0;
+}
+.clientes h1 {
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+.clientes .itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clientes .itens a {
+    width: 22%;
+    padding: 30px 40px;
+}
+.clientes .itens img {
+    height: 160px;
+    object-fit: contain;
+    object-position: center;
+    transition: .6s;
+    transform: scale(1);
+    margin: 0 auto;
+}
+.clientes .itens a:hover img {
+    transform: scale(1.05);
+}
+
+.contato {
+    padding: 80px 0;
+}
+.contato input {
+    height: 45px;
+    margin-bottom: 15px;
+}
+.contato textarea {
+    height: 130px;
+    margin-bottom: 15px;
+}
+.contato button {
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to right, #276dc4 0%, #13d6b6 100%);
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+}
+.contato button:hover {
+    background: linear-gradient(to right, #276dc4 0%, #276dc4 100%);
+}
+
+footer {
+    padding: 30px 15px;
+    background: rgb(180,199,231);
+    background: linear-gradient(180deg, #276dc4 30%, #13d6b6 100%);
+    display: flex;
+    justify-content: space-evenly;
+}
+footer a {
+    font-size: 18px;
+    color: #fff;
+}
+footer a:hover {
+    color: #404040;
+}
+footer a .fa {
+    margin-right: 5px;
+}
+
 /* --- MOBILE --- */
 @media (max-width: 767px) {
+    .navbar-header {
+        width: auto;
+    }
+    .navbar-header .navbar-brand {
+        width: 60%;
+    }
+    ul.nav {
+        width: 100%;
+        height: auto!important;
+        display: block;
+        text-align: center;
+        margin: 0!important;
+    }
     #bs-example-navbar-collapse-1 {
         float: none;
-        background: transparent;
+        background: linear-gradient(180deg, #276dc4 30%, #13d6b6 100%);
         z-index: 300;
         position: relative;
         min-height: 300px;
@@ -116,7 +275,7 @@ ul.nav>li>a:hover {
         padding: 10px 30px;
         width: 100%;
         margin: 0 auto;
-        top: -30px;
+        top: -22px;
     }
     .navbar-default .navbar-toggle {
         padding: 15px 15px;
@@ -128,7 +287,7 @@ ul.nav>li>a:hover {
     }
     .navbar-default .navbar-toggle:focus,
     .navbar-default .navbar-toggle:hover {
-        background-color: #e7b042;
+        background-color: #276dc4;
     }
     ul.nav,
     .navbar-default,
@@ -153,86 +312,93 @@ ul.nav>li>a:hover {
     .navbar-nav>li>a {
         padding: 15px 10px!important;
     }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar-header img {
-        max-width: 40px;
+    .vitrine img {
+        height: 250px;
     }
-    #bs-example-navbar-collapse-1 {
-        width: 90%;
+    .vitrine .box {
+        bottom: 15px;
     }
-    ul.nav>li>a {
-        font-size: 13px;
-    }
-    .mural .item1 {
-        height: 200px;
-    }
-    .mural .item2 {
-        width: 63.33%;
-        height: 200px;
-        margin-top: -215px;
-    }
-    .mural .item3 {
-        height: 430px;
-    }
-    .mural h3 {
-        font-size: 18px;
-        margin: 0 0 5px;
-    }
-    .mural p {
-        font-size: 12px;
-    }
-    .mural a.btn-leiamais {
-        font-size: 12px;
-        padding: 5px 30px;
-        margin: 5px 0 0;
-    }
-    .mural .item3 {
-        padding: 15px;
-    }
-    .mural h2 {
+    .vitrine .box h1 {
         font-size: 28px;
     }
-    .obras h1 {
-        font-size: 30px;
-    }
-    .obras ul {
-        height: 99px;
-    }
-    .obras li:before {
-        width: calc(50% - 10px);
-    }
-    .obras li>a {
-        font-size: 16px;
-        width: 50px;
-        height: 50px;
-    }
-    .plano-governo h1 {
-        font-size: 67px;
-    }
-    .plano-governo ul>li>a {
+    .vitrine .box p {
         font-size: 16px;
     }
-    .plano-governo ul.acoes>li>a .fa {
-        font-size: 30px;
+    .section-geral {
+        display: block;
+        padding: 30px 15px;
     }
-    .rodape ul>li>a {
+    .section-geral.sobre .item:first-child {
+        padding: 0;
+    }
+    h1 {
+        font-size: 20px;
+        margin: 0 auto 20px;
+    }
+    p {
         font-size: 14px;
+        margin: 0 0 15px;
+    }
+    .sobre img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .metodologia,
+    .valor,
+    .clientes,
+    .contato {
+        padding: 30px 0;
+    }
+    .metodologia h4 {
+        font-size: 16px;
+        margin: 20px 0 15px;
+    }
+    .valor img {
+        width: 50%;
+        margin: 0 auto 30px;
+    }
+    .clientes .itens a {
+        width: 29%;
+        padding: 0;
+    }
+    footer {
+        display: block;
+        padding: 30px 15px;
+    }
+    footer a {
+        font-size: 16px;
+        display: table;
+        margin: 20px 0;
     }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-    .obras h1 {
-        font-size: 40px;
+@media (min-width: 768px) and (max-width: 991px) {
+    ul.nav>li>a {
+        font-size: 12px!important;
     }
-    .obras ul {
-        height: 132px;
+    .clientes .itens a {
+        padding: 10px 20px;
     }
-    .obras li>a {
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar-header {
+        width: 20%;
+    }
+    #bs-example-navbar-collapse-1 {
+        width: 70%;
+    }
+    ul.nav>li>a {
+        font-size: 14px;
+    }
+    h1 {
         font-size: 20px;
-        width: 70px;
-        height: 60px;
+        margin: 0 auto 20px;
     }
-    .plano-governo h1 {
-        font-size: 88px;
+    .metodologia h4 {
+        font-size: 16px;
+    }
+    p,
+    .metodologia ul>li {
+        font-size: 14px;
+        margin: 0 0 10px;
     }
 }

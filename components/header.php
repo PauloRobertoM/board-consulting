@@ -44,9 +44,9 @@
         <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
         <link rel="manifest" href="assets/images/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#404040">
+        <meta name="msapplication-TileColor" content="#276dc4">
         <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#404040">
+        <meta name="theme-color" content="#276dc4">
 
         <title>Board Consulting</title>
 
@@ -82,7 +82,7 @@
                                 <li><a href="#metodologia" class="scroll">Metodologia</a></li>
                                 <li><a href="#valor" class="scroll">Criando Valor</a></li>
                                 <li><a href="#experiencia" class="scroll">Experiências Profissionais</a></li>
-                                <li><a href="contato" class="scroll">Contato</a></li>
+                                <li><a href="#contato" class="scroll">Contato</a></li>
                             </ul><!-- .nav -->
                         </div><!-- .navbar-collapse -->
                     </div><!-- container -->
